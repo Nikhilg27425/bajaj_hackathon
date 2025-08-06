@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
     gcc \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy only the essential files
+# Copy only the files we need
 COPY requirements_simple.txt .
 COPY app_simple.py .
 
