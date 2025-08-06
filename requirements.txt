@@ -1,3 +1,6 @@
+setuptools>=65.0.0
+wheel
+
 fastapi==0.104.1
 uvicorn[standard]==0.24.0
 python-multipart==0.0.6
@@ -22,4 +25,4 @@ sentence-transformers==2.2.2
 requests==2.31.0
 numpy==1.24.3
 torch==2.0.1
-transformers==4.35.0 
+transformers==4.35.0
