@@ -8,11 +8,11 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy only the essential files
-COPY requirements_simple.txt .
-COPY app_simple.py .
+COPY requirements.txt .
+COPY app.py .
 
 # Install Python dependencies
-RUN pip install --no-cache-dir -r requirements_simple.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Expose port
 EXPOSE 8001
